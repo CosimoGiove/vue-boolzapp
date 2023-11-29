@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -21,11 +25,89 @@
             <!--contenitore dell-app-->
             <div class="contenitoreboolzapp">
                 <header>
-                    <div class="utente"></div>
-                    <div class="infoutente"></div>
+                    <!--nome immagine e icone utente-->
+                    <div class="utente g-0">
+                        <!--immagine e nome utente-->
+                        <div class="containerutente">
+                            <ul>
+                                <li><img class="immagineprofilo" src="img/avatar_io.jpg" alt="immagine profilo"></li>
+                                <li>
+                                    <h3>cosimo giove</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /immagine e nome utente-->
+                        <!--icone-->
+                        <div class="icone">
+                            <ul>
+                                <li><i class="fa-solid fa-circle-notch"></i></li>
+                                <li><i class="fa-solid fa-message"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                        </div>
+                        <!-- fine icone-->
+                    </div>
+                    <!--fine nome immagine e icone utente-->
+                    <!--immagine utente scelto-->
+                    <div class="infoutente">
+                        <div class="containerutente">
+                            <!--immagine dell utente-->
+                            <ul>
+                                <li><img class="immagineprofilo" src="img/avatar_1.jpg" alt="immagine profilo"></li>
+                                <li>
+                                    <h3>Michele</h3>
+                                    <!--ultimo accesso-->
+                                    <h5 class="accesso">ultimo accesso oggi alle</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="icone">
+                            <!--icone-->
+                            <ul>
+                                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                                <li><i class="fa-solid fa-paperclip"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--immagine utente scelto-->
                 </header>
                 <main>
-                    <div class="chatutenti"></div>
+                    <div class="chatutenti">
+                        <!--notifiche-->
+                        <div class="containerutente notifiche ">
+                            <!--immagine dell utente-->
+                            <ul>
+                                <li>
+                                    <div class="iconanotifiche"><i class="fa-solid fa-bell-slash"></i></div>
+
+                                </li>
+                                <li>
+                                    <h3>Ricevi notifiche di nuovi messaggi</h3>
+                                    <!--ultimo accesso-->
+                                    <h5 class="accesso"> <a href="/">
+                                            Attiva notifiche desktop
+                                        </a>
+                                    </h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- fine notifiche-->
+                        <!--ricerca utenti-->
+                        <div class="ricercautenti">
+                            <ul>
+                                <li class="iconaricerca"><i class="fa-solid fa-magnifying-glass"></i></li>
+                                <li>
+                                    <input class="ricerca" type="text" name="" id="" size="43" placeholder="Cerca o inizia una nuova chat">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- fine ricerca utenti-->
+                        <ul>
+                            <li>1</li>
+                        </ul>
+                    </div>
                     <div class="conversazione">
                         <div class="messaggi"></div>
                         <div class="inviomessaggio"></div>

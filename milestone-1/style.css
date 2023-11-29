@@ -4,8 +4,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    list-style: none;
 }
 /*  / reset*/
+
+/*header */
 
 .header-top{
     height: 100px;
@@ -29,14 +32,21 @@ header{
     display: flex;
 }
 .utente{
-    background-color: red;
-    width: 30%;
+    background-color:#eaeaea;
+    width: 35%;
     height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid #d7d7d7;
 }
 .infoutente{
-    background-color: yellow;
-    width: 70%;
+    background-color:#eaeaea;
+    width: 65%;
     height: 68px ;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 main{
@@ -45,9 +55,9 @@ main{
 }
 
 .chatutenti{
-    width: 30%;
+    width: 35%;
     height:calc(100%);
-    background-color: blue;
+    background-color: white;
 }
 
 .messaggi{
@@ -57,7 +67,7 @@ main{
 }
 
 .conversazione{
-    width: 70%;
+    width: 65%;
     height:calc(100%);
     background-color: bisque;
 }
@@ -65,3 +75,85 @@ main{
     width: 100%;
     height:10% ;
 }
+.immagineprofilo{
+    width: 40px;
+    border-radius: 20px;
+    margin-left: 5px;
+}
+ .containerutente ul li{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.containerutente ul li h3,h5{
+    margin-left: 10px;
+}
+.icone ul li{
+    display: inline-block;
+    margin-right: 20px;
+    color: #b1b1b1;
+}
+
+.accesso{
+    color: #8a8e91;
+}
+
+/* fine header */
+
+/* inizio main */
+
+.notifiche{
+    margin-top: 16px;
+    margin-left: 20px;
+    background-color: #8edafc;
+    margin-left: 0px;
+    padding: 15px;
+    margin-top: 0px;
+}
+
+.iconanotifiche{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-bell-slash{
+    font-size: 25px;
+    color: #8fd7fb;
+}
+
+.chatutenti ul li h3{
+    font-size: 15px;
+}
+
+h5 a {
+    color:#417793;
+}
+
+.ricercautenti ul li{
+    display: inline-block;
+}
+
+.ricercautenti{
+    background-color: white;
+    border: 1px solid lightgray;
+    margin: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.ricerca{
+    border: none;
+    margin-left: 20px;
+}
+.iconaricerca{
+    margin-left: 10px;
+    color:#8a8e91;
+
+}
+
+
+
