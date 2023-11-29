@@ -210,7 +210,11 @@ h5 a {
     width: 100%;
 }
 /* fine main */
+/* hover */
 
+.elencocontatti:hover{
+    background-color: lightgray;
+}
 
 /* media queries*/
 
