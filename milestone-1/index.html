@@ -104,10 +104,16 @@
                             </ul>
                         </div>
                         <!-- fine ricerca utenti-->
-                        <ul>
-                            <li v-for="contatto in contatti"></li>
-
-                        </ul>
+                        <div class="contenitorecontatti">
+                            <ul class="elencocontatti" v-for="contatto in contacts">
+                                <li class="contenitoreimmagini">
+                                    <img class="immagineprofilojs" :src="contatto.avatar" alt="">                                          
+                                </li>
+                                <li class="nome-js">{{contatto.name}}</li>
+    
+                            </ul>
+                        </div>
+                       
                     </div>
                     <div class="conversazione">
                         <div class="messaggi"></div>

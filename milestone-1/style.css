@@ -58,6 +58,7 @@ main{
     width: 35%;
     height:calc(100%);
     background-color: white;
+    overflow-y: scroll;
 }
 
 .messaggi{
@@ -154,6 +155,32 @@ h5 a {
     color:#8a8e91;
 
 }
+
+/* immagini js */
+
+.immagineprofilojs{
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.elencocontatti{
+    display: flex;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px; 
+}
+
+.contenitorecontatti{
+    border-right: 1px solid #ebebeb;
+    margin-right: 10px;
+}
+
+.nome-js{
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
 
 
 
