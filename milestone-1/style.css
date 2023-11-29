@@ -292,6 +292,7 @@ h5 a {
     }
     .immagineprofilo{
         width: 30px;
+        height: 30px;
     }
   }
   @media screen and (max-width: 418px) {
