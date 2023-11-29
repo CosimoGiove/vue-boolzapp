@@ -99,13 +99,14 @@
                             <ul>
                                 <li class="iconaricerca"><i class="fa-solid fa-magnifying-glass"></i></li>
                                 <li>
-                                    <input class="ricerca" type="text" name="" id="" size="43" placeholder="Cerca o inizia una nuova chat">
+                                    <input class="ricerca" type="text" name="" id="" size="42" placeholder="Cerca o inizia una nuova chat">
                                 </li>
                             </ul>
                         </div>
                         <!-- fine ricerca utenti-->
                         <ul>
-                            <li>1</li>
+                            <li v-for="contatto in contatti"></li>
+
                         </ul>
                     </div>
                     <div class="conversazione">
