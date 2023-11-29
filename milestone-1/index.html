@@ -26,7 +26,7 @@
             <div class="contenitoreboolzapp">
                 <header>
                     <!--nome immagine e icone utente-->
-                    <div class="utente g-0">
+                    <div class="utente">
                         <!--immagine e nome utente-->
                         <div class="containerutente">
                             <ul>
@@ -61,7 +61,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="icone">
+                        <div class="icone media">
                             <!--icone-->
                             <ul>
                                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -99,25 +99,41 @@
                             <ul>
                                 <li class="iconaricerca"><i class="fa-solid fa-magnifying-glass"></i></li>
                                 <li>
-                                    <input class="ricerca" type="text" name="" id="" size="42" placeholder="Cerca o inizia una nuova chat">
+                                    <input class="ricerca size" type="text" name="" id="" size="42"
+                                        placeholder="Cerca o inizia una nuova chat">     
                                 </li>
                             </ul>
                         </div>
                         <!-- fine ricerca utenti-->
+                        <!--contatti-->
                         <div class="contenitorecontatti">
                             <ul class="elencocontatti" v-for="contatto in contacts">
                                 <li class="contenitoreimmagini">
-                                    <img class="immagineprofilojs" :src="contatto.avatar" alt="">                                          
+                                    <img class="immagineprofilojs" :src="contatto.avatar" alt="">
                                 </li>
                                 <li class="nome-js">{{contatto.name}}</li>
-    
+
                             </ul>
                         </div>
-                       
+                        <!-- finecontatti-->
                     </div>
                     <div class="conversazione">
-                        <div class="messaggi"></div>
-                        <div class="inviomessaggio"></div>
+                        <div class="messaggi">
+                        </div>
+                        <div class="inviomessaggio">
+                            <ul>
+                                <li class="smile">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                </li>
+                                <li>
+                                    <input class="ricerca ciao" type="text" name="" id="" size="90"
+                                        placeholder="scrivi un messaggio">
+                                </li>
+                                <li class="microfono">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </main>
             </div>

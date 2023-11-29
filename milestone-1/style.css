@@ -63,18 +63,22 @@ main{
 
 .messaggi{
     height:90%;
-    width: 100%;
-    background-color: lightgreen;
+    width: 99%;
+    background-image: url(img/mine.jpg);
 }
 
 .conversazione{
     width: 65%;
     height:calc(100%);
-    background-color: bisque;
+    background-color: white;
 }
 .inviomessaggio{
     width: 100%;
     height:10% ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3eeea;
 }
 .immagineprofilo{
     width: 40px;
@@ -108,8 +112,9 @@ main{
     margin-left: 20px;
     background-color: #8edafc;
     margin-left: 0px;
-    padding: 15px;
+    padding: 10px;
     margin-top: 0px;
+    margin-left: 0px;
 }
 
 .iconanotifiche{
@@ -140,7 +145,7 @@ h5 a {
 
 .ricercautenti{
     background-color: white;
-    border: 1px solid lightgray;
+    border: 1px solid #ebebeb;
     margin: 5px;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -149,6 +154,8 @@ h5 a {
 .ricerca{
     border: none;
     margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .iconaricerca{
     margin-left: 10px;
@@ -181,6 +188,120 @@ h5 a {
     margin-top: 10px;
     font-weight: bolder;
 }
+
+.inviomessaggio ul li{
+    display: inline-block;
+}
+.smile{
+    color: #6f6f6f;
+}
+
+.microfono{
+    margin-left: 15px;
+    color: #6f6f6f;
+    margin-left: 50px;
+}
+.ciao{
+    width: 100%;
+}
+/* fine main */
+
+
+/* media queries*/
+
+@media screen and (max-width: 1400px) {
+    .ciao{
+        width: 550px
+    }
+    .microfono{
+        margin-left: 20px;
+    }
+  }
+  @media screen and (max-width: 1268px) {
+   .size{
+    width: 260px;
+   }
+  }
+  @media screen and (max-width: 1186px) {
+    .ciao{
+        width: 450px
+    }
+    .microfono{
+        margin-left: 20px;
+    }
+    .size{
+        width: 200px;
+    }
+  }
+
+  @media screen and (max-width: 988px) {
+    .ciao{
+        width: 350px
+    }
+    .microfono{
+        margin-left: 20px;
+    }
+    .size{
+        width:150px ;
+    }
+    .media ul li{
+        margin-right: 2px;
+        display: block;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    .ciao{
+        width: 250px
+    }
+    .microfono{
+        margin-left: 20px;
+    }
+    .size{
+        width:100px ;
+    }
+    .media ul li{
+        margin-right: 1px;
+        font-size: 2px;
+        display: block;
+    }
+  }
+  @media screen and (max-width: 602px) {
+    .ciao{
+        width: 150px
+    }
+    .microfono{
+        margin-left: 20px;
+    }
+    .size{
+        width: 60px;
+    }
+    .immagineprofilojs{
+        width: 20px;
+    }
+    .nome-js{
+        font-size: 13px;
+    }
+
+    .containerutente ul li h3{
+        font-size: 12px;
+    }
+    .immagineprofilo{
+        width: 30px;
+    }
+  }
+  @media screen and (max-width: 418px) {
+    .ciao{
+        width: 50px
+    }
+    .microfono{
+        margin-left: 20px;
+    }
+
+    .size{
+        width: 30px;
+    }
+  }
+
 
 
 
