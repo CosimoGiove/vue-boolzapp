@@ -8,6 +8,10 @@
 }
 /*  / reset*/
 
+[v-cloak]{
+    display: none;
+}
+
 /*header */
 
 .header-top{
