@@ -7,11 +7,33 @@
     <title>vue-boolzapp</title>
     <!--foglio di stile-->
     <link rel="stylesheet" href="style.css">
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- container vue-js-->
-    <div id="app">{{ message }}</div>
+    <div id="app">
+        <div class="contenitoresupremo">
+            <div class="header-top"></div>
+            <!--contenitore dell-app-->
+            <div class="contenitoreboolzapp">
+                <header>
+                    <div class="utente"></div>
+                    <div class="infoutente"></div>
+                </header>
+                <main>
+                    <div class="chatutenti"></div>
+                    <div class="conversazione">
+                        <div class="messaggi"></div>
+                        <div class="inviomessaggio"></div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
     <!--js vue-->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!--mio js-sript-->

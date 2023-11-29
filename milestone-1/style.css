@@ -3,5 +3,65 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 /*  / reset*/
+
+.header-top{
+    height: 100px;
+    background-color:#009788 ;
+}
+.contenitoresupremo{
+    height: 100vh;
+    background-color:#dadbd5;
+}
+.contenitoreboolzapp{
+    width: 80% ;
+    height:calc(100vh - 100px);
+    background-color: lightcyan;
+    margin: 0 auto;
+    position:relative;
+    bottom: 50px;
+    left: 0px;
+} 
+
+header{
+    display: flex;
+}
+.utente{
+    background-color: red;
+    width: 30%;
+    height: 68px;
+}
+.infoutente{
+    background-color: yellow;
+    width: 70%;
+    height: 68px ;
+}
+
+main{
+    display: flex;
+    height: 90%;
+}
+
+.chatutenti{
+    width: 30%;
+    height:calc(100%);
+    background-color: blue;
+}
+
+.messaggi{
+    height:90%;
+    width: 100%;
+    background-color: lightgreen;
+}
+
+.conversazione{
+    width: 70%;
+    height:calc(100%);
+    background-color: bisque;
+}
+.inviomessaggio{
+    width: 100%;
+    height:10% ;
+}
