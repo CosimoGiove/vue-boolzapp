@@ -1,0 +1,415 @@
+/* reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    list-style: none;
+}
+
+/*  / reset*/
+.contenitoresupremo {
+    background: linear-gradient(#009788 20%, #e8e8e8 10%);
+}
+
+[v-cloak] {
+    display: none;
+}
+
+/*header */
+
+.contenitoresupremo {
+    height: 100vh;
+    background-color: #dadbd5;
+}
+
+.contenitoreboolzapp {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+header {
+    display: flex;
+}
+
+.utente {
+    background-color: #eaeaea;
+    width: 35%;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid #d7d7d7;
+}
+
+.infoutente {
+    background-color: #eaeaea;
+    width: 65%;
+    height: 68px;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+main {
+    display: flex;
+    height: calc(100% - 68px);
+}
+
+.chatutenti {
+    width: 35%;
+    height: calc(100% - 30px);
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.messaggi {
+    height: 90%;
+    width: 99%;
+    background-image: url(img/mine.jpg);
+}
+
+.conversazione {
+    width: 65%;
+    height: calc(100% - 30px);
+    background-color: white;
+}
+
+.inviomessaggio {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f3eeea;
+}
+
+.immagineprofilo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.containerutente ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.containerutente ul li h3,
+h5 {
+    margin-left: 10px;
+}
+
+.icone ul li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #b1b1b1;
+}
+
+.accesso {
+    color: #8a8e91;
+}
+
+/* fine header */
+
+/* inizio main */
+
+.notifiche {
+    margin-top: 16px;
+    margin-left: 20px;
+    background-color: #8edafc;
+    margin-left: 0px;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.iconanotifiche {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-bell-slash {
+    font-size: 25px;
+    color: #8fd7fb;
+}
+
+.chatutenti ul li h3 {
+    font-size: 15px;
+}
+
+h5 a {
+    color: #417793;
+}
+
+.ricercautenti ul li {
+    display: inline-block;
+}
+
+.ricercautenti {
+    background-color: white;
+    border: 1px solid #ebebeb;
+    margin: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.ricerca {
+    border: none;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.iconaricerca {
+    margin-left: 10px;
+    color: #8a8e91;
+
+}
+
+/* immagini js */
+
+.immagineprofilojs {
+    width: 60px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.elencocontatti {
+    display: flex;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 10px;
+}
+
+.contenitorecontatti {
+    border-right: 1px solid #ebebeb;
+    margin-right: 10px;
+}
+
+.nome-js {
+    margin-left: 17px;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.inviomessaggio ul li {
+    display: inline-block;
+}
+
+.smile {
+    color: #6f6f6f;
+}
+
+.microfono {
+    margin-left: 15px;
+    color: #6f6f6f;
+    margin-left: 50px;
+}
+
+.ciao {
+    width: 100%;
+}
+
+.contenitorerisposte {
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    padding-top: 40px;
+    text-align: end;
+
+}
+
+.messaggiomio{
+    background-color: #d5f9ba;
+    padding-left: 20px;
+    padding-right: 60px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contenitorerisposte ul li{
+    margin-top: 20px;
+}
+
+.received{
+    text-align: left;
+
+}
+.ricevuto{
+    background-color:#d5f9ba;
+    padding-left: 20px;
+    padding-right: 100px;
+    border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+.messaggioinviato{
+    font-weight: lighter;
+    color: #bdb9c1;
+}
+.orario{
+    margin-left: 30px;
+    font-size: 7px;
+}
+.orario2{
+    margin-left: 50px;
+}
+.orarioamici{
+    margin-left: 120px;
+    margin-top: 5px;
+}
+
+
+/* fine main */
+/* hover */
+
+.elencocontatti:hover {
+    background-color: lightgray;
+}
+
+/* media queries*/
+@media screen and (max-width: 1800px) {
+    .ciao {
+        width: 800px
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1667px) {
+    .ciao {
+        width: 700px;
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+}
+
+
+@media screen and (max-width: 1476px) {
+    .ciao {
+        width: 550px
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1268px) {
+    .size {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1186px) {
+    .ciao {
+        width: 450px
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+
+    .size {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 988px) {
+    .ciao {
+        width: 350px
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+
+    .size {
+        width: 150px;
+    }
+
+    .media ul li {
+        margin-right: 2px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .ciao {
+        width: 250px
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+
+    .size {
+        width: 100px;
+    }
+
+    .media ul li {
+        margin-right: 1px;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 602px) {
+    .ciao {
+        width: 150px
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+
+    .size {
+        width: 60px;
+    }
+
+    .immagineprofilojs {
+        width: 20px;
+    }
+
+    .nome-js {
+        font-size: 13px;
+    }
+
+    .containerutente ul li h3 {
+        font-size: 12px;
+    }
+
+    .immagineprofilo {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media screen and (max-width: 418px) {
+    .ciao {
+        width: 50px
+    }
+
+    .microfono {
+        margin-left: 20px;
+    }
+
+    .size {
+        width: 30px;
+    }
+}
