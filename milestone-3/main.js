@@ -6,6 +6,7 @@ createApp({
         return {
             contatto: 0,
             messaggio: "",
+            messaggioBot:"ok",
             contacts: [
                 {
                     name: 'Michele',
@@ -174,15 +175,27 @@ createApp({
     methods: {
         conversazione(index) {
             this.contatto = index;
+        },
+        invioMessaggio() {
+            this.contacts[this.contatto].messages.push({
+              date: "orario",
+              message: this.messaggio,
+              status: "sent",   
+            });           
+            this.messaggio ="",
+            setTimeout(this.messaggioBot1, 3_000);
+        },
+        messaggioBot1(){
+            this.contacts[this.contatto].messages.push({
+               date:"orario",
+               message: this.messaggioBot,
+               status:"received"
+
+            })
         }
-    },
-    invioMessaggio() {
-        this.contacts[this.contatto].messages.push({
-          date: 'orario',
-          message: this.messaggio,
-          status: 'sent',
-        });
+      
     }
+   
 
 },
 ).mount('#app')
