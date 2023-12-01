@@ -180,7 +180,7 @@ createApp({
         },
         invioMessaggio() {
             this.contacts[this.contatto].messages.push({
-              date: formatDate(new date()),
+              date:"ora",
               message: this.messaggio,
               status: "sent",   
             });           
