@@ -100,7 +100,7 @@
                             <ul>
                                 <li class="iconaricerca"><i class="fa-solid fa-magnifying-glass"></i></li>
                                 <li>
-                                    <input class="ricerca size" type="text" name="" id="" size="42"
+                                    <input v-model="ricerca" class="ricerca size" type="text" name="" id="" size="42"
                                         placeholder="Cerca o inizia una nuova chat">
                                 </li>
                             </ul>
@@ -114,10 +114,10 @@
                                     <img class="immagineprofilojs" :src="contatto.avatar" alt="">
                                 </li>
                                 <li class="nome-js">{{contatto.name}}
-                                    <div class="messaggioinviato">ultimo messaggio inviato</div>
+                                    <div class="messaggioinviato">ultimo messaggio inviato</div>       
                                 </li>
                                 <div class="orario orarioamici">
-                                    12:00
+                                   12:30
                                 </div>
 
                             </ul>

@@ -62,13 +62,13 @@ main {
     width: 35%;
     height: calc(100% - 30px);
     background-color: white;
-    overflow-y: scroll;
 }
 
 .messaggi {
     height: 90%;
-    width: 99%;
+    width: 100%;
     background-image: url(img/mine.jpg);
+    overflow-y: scroll;
 }
 
 .conversazione {
@@ -193,6 +193,8 @@ h5 a {
 .contenitorecontatti {
     border-right: 1px solid #ebebeb;
     margin-right: 10px;
+    overflow-y: scroll;
+    height: calc(100% - 120px);
 }
 
 .nome-js {
@@ -259,6 +261,7 @@ h5 a {
     font-weight: lighter;
     color: #bdb9c1;
 }
+
 .orario{
     margin-left: 30px;
     font-size: 7px;
@@ -270,6 +273,11 @@ h5 a {
     margin-left: 120px;
     margin-top: 5px;
 }
+
+.contattoattivo{
+    background-color: lightgray;
+}
+
 
 
 /* fine main */
@@ -302,6 +310,9 @@ h5 a {
 
 
 @media screen and (max-width: 1476px) {
+    .orarioamici{
+        margin-left: 160px;
+    }
     .ciao {
         width: 550px
     }
@@ -312,12 +323,18 @@ h5 a {
 }
 
 @media screen and (max-width: 1268px) {
+    .orarioamici{
+        margin-left: 140px;
+    }
     .size {
         width: 260px;
     }
 }
 
-@media screen and (max-width: 1186px) {
+@media screen and (max-width: 1191px) {
+    .orarioamici{
+        margin-left: 80px;
+    }
     .ciao {
         width: 450px
     }
@@ -329,9 +346,18 @@ h5 a {
     .size {
         width: 200px;
     }
+    .contenitorecontatti{
+        height: calc(100% - 150px);
+    }
 }
 
 @media screen and (max-width: 988px) {
+    .orarioamici{
+        margin-left: 0px;
+    }
+    .contenitorecontatti{
+        height: calc(100% - 160px);
+    }
     .ciao {
         width: 350px
     }
@@ -370,6 +396,9 @@ h5 a {
 }
 
 @media screen and (max-width: 602px) {
+    .contenitorecontatti{
+        height: calc(100% - 180px);
+    }
     .ciao {
         width: 150px
     }
@@ -401,6 +430,9 @@ h5 a {
 }
 
 @media screen and (max-width: 418px) {
+    .contenitorecontatti{
+        height: calc(100% - 220px);
+    }
     .ciao {
         width: 50px
     }
