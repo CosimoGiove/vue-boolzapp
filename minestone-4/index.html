@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue-boolzapp</title>
+    <!--foglio di stile-->
+    <link rel="stylesheet" href="style.css">
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap" rel="stylesheet">
+    <!-- font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- container vue-js-->
+    <div id="app" v-cloak>
+        <div class="contenitoresupremo">
+            <!--contenitore dell-app-->
+            <div class="contenitoreboolzapp">
+                <header>
+                    <!--nome immagine e icone utente-->
+                    <div class="utente">
+                        <!--immagine e nome utente-->
+                        <div class="containerutente">
+                            <ul>
+                                <li><img class="immagineprofilo" src="img/7a0ac7d0-3ab6-4f93-aa3c-9e0a030d8d35.jpg"
+                                        alt="immagine profilo"></li>
+                                <li>
+                                    <h3>cosimo giove</h3>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /immagine e nome utente-->
+                        <!--icone-->
+                        <div class="icone">
+                            <ul>
+                                <li><i class="fa-solid fa-circle-notch"></i></li>
+                                <li><i class="fa-solid fa-message"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                        </div>
+                        <!-- fine icone-->
+                    </div>
+                    <!--fine nome immagine e icone utente-->
+                    <!--immagine utente scelto-->
+                    <div class="infoutente">
+                        <div class="containerutente">
+                            <!--immagine dell utente-->
+                            <ul>
+                                <li><img class="immagineprofilo" :src="contacts[contatto].avatar"
+                                        alt="immagine profilo"></li>
+                                <li>
+                                    <h3>Michele</h3>
+                                    <!--ultimo accesso-->
+                                    <h5 class="accesso">ultimo accesso oggi alle</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="icone media">
+                            <!--icone-->
+                            <ul>
+                                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                                <li><i class="fa-solid fa-paperclip"></i></li>
+                                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--immagine utente scelto-->
+                </header>
+                <main>
+                    <div class="chatutenti">
+                        <!--notifiche-->
+                        <div class="containerutente notifiche ">
+                            <!--immagine dell utente-->
+                            <ul>
+                                <li>
+                                    <div class="iconanotifiche"><i class="fa-solid fa-bell-slash"></i></div>
+
+                                </li>
+                                <li>
+                                    <h3>Ricevi notifiche di nuovi messaggi</h3>
+                                    <!--ultimo accesso-->
+                                    <h5 class="accesso"> <a href="/">
+                                            Attiva notifiche desktop
+                                        </a>
+                                    </h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- fine notifiche-->
+                        <!--ricerca utenti-->
+                        <div class="ricercautenti">
+                            <ul>
+                                <li class="iconaricerca"><i class="fa-solid fa-magnifying-glass"></i></li>
+                                <li>
+                                    <input v-model="ricerca" class="ricerca size" type="text" name="" id="" size="42"
+                                        placeholder="Cerca o inizia una nuova chat">
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- fine ricerca utenti-->
+                        <!--contatti-->
+                        <div class="contenitorecontatti">
+                            <ul @click="conversazione(index)" class="elencocontatti"
+                                v-for="(contatto, index) in ricercacontatti()">
+                                <li class="contenitoreimmagini">
+                                    <img class="immagineprofilojs" :src="contatto.avatar" alt="">
+                                </li>
+                                <li class="nome-js">{{contatto.name}}
+                                    <div class="messaggioinviato">ultimo messaggio inviato</div>       
+                                </li>
+                                <div class="orario orarioamici">
+                                   12:30
+                                </div>
+
+                            </ul>
+                        </div>
+                        <!-- finecontatti-->
+                    </div>
+                    <div class="conversazione">
+                        <div class="messaggi">
+                            <div class="contenitorerisposte">
+                                <ul>
+                                    <li v-for="contact in contacts [contatto].messages" :class="contact.status">
+                                        <span v-if="contact.status === 'sent'" class="messaggiomio">
+                                            {{contact.message}}
+                                            <span class="orario">13:30</span>
+                                        </span>
+                                        <span v-else="" class="ricevuto">
+                                            {{contact.message}}
+                                            <span class="orario orario2">
+                                                10:30
+                                            </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="inviomessaggio">
+                            <ul>
+                                <li class="smile">
+                                    <i class="fa-regular fa-face-smile"></i>
+                                </li>
+                                <li>
+                                    <input v-model="messaggio" @keyup.enter="invioMessaggio" class="ricerca ciao" type="text" name="" id="" size="90"
+                                        placeholder="scrivi un messaggio">
+                                </li>
+                                <li class="microfono">
+                                    <i class="fa-solid fa-microphone"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <!--js vue-->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!--mio js-sript-->
+    <script src="main.js"></script>
+</body>
+
+</html>
