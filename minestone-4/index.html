@@ -109,11 +109,11 @@
                         <!--contatti-->
                         <div class="contenitorecontatti">
                             <ul @click="conversazione(index)" class="elencocontatti"
-                                v-for="(contatto, index) in ricercacontatti()">
+                                v-for="(contatti, index) in ricercacontatti()" :class="{contattoattivo: contatto === index}">
                                 <li class="contenitoreimmagini">
-                                    <img class="immagineprofilojs" :src="contatto.avatar" alt="">
+                                    <img class="immagineprofilojs" :src="contatti.avatar" alt="">
                                 </li>
-                                <li class="nome-js">{{contatto.name}}
+                                <li class="nome-js">{{contatti.name}}
                                     <div class="messaggioinviato">ultimo messaggio inviato</div>       
                                 </li>
                                 <div class="orario orarioamici">
